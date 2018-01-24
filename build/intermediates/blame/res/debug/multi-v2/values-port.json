@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/techjini/Downloads/quickstart-android-master/messaging/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/techjini/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/825775de977f1c38d2937c0b90d9be99/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

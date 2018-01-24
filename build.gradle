@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+check.dependsOn 'assembleDebugAndroidTest'
+apply plugin: 'io.fabric'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'message'
+            storeFile file('/home/techjini/Downloads/quickstart-android-master/messaging/app/key0.jks')
+            storePassword 'message'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.google.firebase.quickstart.fcm"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            proguardFile '/home/techjini/Downloads/quickstart-android-master/messaging/app/proguard-rules.pro'
+        }
+        buildType {
+            debuggable true
+            jniDebuggable true
+        }
+    }
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:26.1.0'
+}
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:animated-vector-drawable:26.1.0'
+    compile 'com.android.support:support-compat:26.1.0'
+    compile 'com.google.firebase:firebase-messaging:11.8.0'
+    compile 'com.firebase:firebase-jobdispatcher:0.6.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+    // Testing dependencies
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support:support-annotations:26.1.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

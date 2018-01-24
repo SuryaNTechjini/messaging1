@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Wed Jan 24 14:25:49 IST 2018
+1.base=/home/techjini/Downloads/quickstart-android-master/messaging/app/build/intermediates/assets/release
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
+0.path=classes.dex
+0.set=DEX
+0.base=/home/techjini/Downloads/quickstart-android-master/messaging/app/build/intermediates/transforms/dex/release/0
+1.path=crashlytics-build.properties

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/techjini/Downloads/quickstart-android-master/messaging/app/src/main/assets"/><source path="/home/techjini/Downloads/quickstart-android-master/messaging/app/build/generated/assets/shaders/buildType"/></dataSet><dataSet config="buildType"><source path="/home/techjini/Downloads/quickstart-android-master/messaging/app/src/buildType/assets"/></dataSet></merger>

@@ -1,0 +1,4 @@
+#Wed Jan 24 12:00:38 IST 2018
+base.0=/home/techjini/Downloads/quickstart-android-master/messaging/app/build/intermediates/transforms/dexMerger/debug/5
+path.0=classes.dex
+renamed.0=classes.dex
